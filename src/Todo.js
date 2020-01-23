@@ -2,14 +2,14 @@ import React from 'react'
 import TodoForm from './components/TodoForm'
 
 export default props => (
-    <div style= {{ display: "flex", justifyContent: "center" }}>
-        <button 
+    <div style={{ display: "flex", justifyContent: "center" }}>
+        <button
             style={{
-                borderRadius: "50%", 
-                width: "24px" , 
-                height: "24px", 
+                borderRadius: "50%",
+                width: "24px",
+                height: "24px",
                 justifyContent: "center",
-                backgroundColor : props.todo.completed ? "green" : ""
+                backgroundColor: props.todo.completed ? "green" : ""
             }}
             onClick={props.toggleComplete}
         >
